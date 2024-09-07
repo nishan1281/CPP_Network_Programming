@@ -1,0 +1,45 @@
+#include <iostream>
+#include <winsock2.h>
+
+// Link with ws2_32.lib
+#pragma comment(lib, "ws2_32.lib")
+
+int main() {
+    // Initialize Winsock
+    WSADATA wsaData;
+    int result = WSAStartup(MAKEWORD(2, 2), &wsaData);
+    if (result != 0) {
+        std::cerr << "WSAStartup failed: " << result << std::endl;
+        return 1;
+    }
+
+    // Create a socket
+    SOCKET serverSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    if (serverSocket == INVALID_SOCKET) {
+        std::cerr << "Error creating socket: " << WSAGetLastError() << std::endl;
+        WSACleanup();
+        return 1;
+    }
+
+    // Define the address and port to bind to
+    sockaddr_in serverAddress;
+    serverAddress.sin_family = AF_INET;        // Address family: IPv4
+    serverAddress.sin_addr.s_addr = INADDR_ANY; // Bind to all available interfaces
+    serverAddress.sin_port = htons(8080);      // Port number, converted to network byte order
+
+    // Bind the socket to the address and port
+    if (bind(serverSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) == SOCKET_ERROR) {
+        std::cerr << "Error binding socket: " << WSAGetLastError() << std::endl;
+        closesocket(serverSocket);
+        WSACleanup();
+        return 1;
+    }
+
+    std::cout << "Socket successfully bound to port 8080." << std::endl;
+
+    // Close the socket and cleanup
+    closesocket(serverSocket);
+    WSACleanup();
+
+    return 0;
+}
