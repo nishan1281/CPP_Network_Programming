@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C293962D-E5E1-42D0-83F7-CCEA0FC4D22E}|w11_Server\\w11_Server.vcxproj|D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\w11_Server\\src\\w11_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C293962D-E5E1-42D0-83F7-CCEA0FC4D22E}|w11_Server\\w11_Server.vcxproj|solutionrelative:w11_Server\\src\\w11_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1D16842-49F3-4421-BBB4-FE1E813B601C}|checking\\checking.vcxproj|D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1D16842-49F3-4421-BBB4-FE1E813B601C}|checking\\checking.vcxproj|solutionrelative:checking\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1D16842-49F3-4421-BBB4-FE1E813B601C}|checking\\checking.vcxproj|D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\checking.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1D16842-49F3-4421-BBB4-FE1E813B601C}|checking\\checking.vcxproj|solutionrelative:checking\\checking.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stdafx.cpp",
+              "DocumentMoniker": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\stdafx.cpp",
+              "RelativeDocumentMoniker": "checking\\stdafx.cpp",
+              "ToolTip": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\stdafx.cpp",
+              "RelativeToolTip": "checking\\stdafx.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-18T13:10:16.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "checking.cpp",
+              "DocumentMoniker": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\checking.cpp",
+              "RelativeDocumentMoniker": "checking\\checking.cpp",
+              "ToolTip": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\checking.cpp",
+              "RelativeToolTip": "checking\\checking.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-18T13:05:15.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "w11_Server.cpp",
+              "DocumentMoniker": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\w11_Server\\src\\w11_Server.cpp",
+              "RelativeDocumentMoniker": "w11_Server\\src\\w11_Server.cpp",
+              "ToolTip": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\w11_Server\\src\\w11_Server.cpp",
+              "RelativeToolTip": "w11_Server\\src\\w11_Server.cpp",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-18T06:27:02.661Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

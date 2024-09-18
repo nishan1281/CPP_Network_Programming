@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  checking.cpp
+D:\SoftwareDevelopment\Network Programming\NetworkProgrammingSolution\checking\checking.cpp(14,12): warning C4101: 'serverSocket': unreferenced local variable
+D:\SoftwareDevelopment\Network Programming\NetworkProgrammingSolution\checking\checking.cpp(14,26): warning C4101: 'acceptSocket': unreferenced local variable
+  checking.vcxproj -> D:\SoftwareDevelopment\Network Programming\NetworkProgrammingSolution\checking\x64\Debug\checking.exe
