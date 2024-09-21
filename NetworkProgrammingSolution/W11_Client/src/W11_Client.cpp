@@ -10,8 +10,8 @@ using namespace std;
 
 int main()
 {
-    cout << "=== W11 sockets =====";
-    cout << "=== CLIENT =====";
+    cout << "=== W11 sockets =====\n";
+    cout << "=== CLIENT =====\n";
     cout << "=== Step1 - Set up DLL =====";
 
     SOCKET clientSocket;
@@ -84,19 +84,23 @@ int main()
 
     int byteCount = send(clientSocket, buffer, 200, 0);
 
-    if (byteCount == SOCKET_ERROR)
+    if (byteCount>0)
     {
-        cout << "server send error: " << WSAGetLastError() <<endl;
-        return -1;  //as regular syntext, return -1 for error
+       cout << "Client: message sent: " << byteCount << endl;
     }
 
     else
-    {
-        cout <<"Server: message sent: " << byteCount << endl;
-    }
-
     WSACleanup();
 
+
+    int rbyteCount = recv(clientSocket, buffer, 200, 0);
+    if (rbyteCount > 0)
+    {
+        cout << "Client: message received reply from server: " << rbyteCount << endl;
+    }
+
+    else
+        WSACleanup();
 
 
 

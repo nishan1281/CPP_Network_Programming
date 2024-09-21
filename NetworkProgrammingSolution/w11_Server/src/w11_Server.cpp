@@ -136,21 +136,22 @@ int main()
     char receiveBuffer[200];  // Create a character array to hold the input
     int rcvByteCount = recv(acceptSocket, receiveBuffer, 200, 0);
 
-    if (rcvByteCount < 0)
+    if (rcvByteCount > 0)
     {
-        cout << "Client: error: "<< WSAGetLastError() << endl;
-        return 0;  //here for terminating function.
+        cout << "Server Received Data: " << receiveBuffer << endl;
     }
-
     else
+      WSACleanup();
+
+
+    char confirmation[200] = "message received";
+    int ByteCount = send(acceptSocket, confirmation, 200, 0);
+    if (ByteCount > 0)
     {
-        cout << "Receive Data: " << receiveBuffer << endl;
+        cout << "Server sent receiving info to client " << receiveBuffer << endl;
     }
-
-    WSACleanup();
-
-
-
+    else
+        WSACleanup();
 
 
     cout << "\n\n=== Step-7: close socket =====\n";
