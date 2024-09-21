@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\",
+  "WorkspaceRootPath": "D:\\SoftwareDevelopment\\CPP_Network_Programming\\NetworkProgrammingSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C293962D-E5E1-42D0-83F7-CCEA0FC4D22E}|w11_Server\\w11_Server.vcxproj|D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\w11_Server\\src\\w11_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E78BDE8E-C5B6-46B0-8204-3B0C22543C07}|W11_Client\\W11_Client.vcxproj|D:\\SoftwareDevelopment\\CPP_Network_Programming\\NetworkProgrammingSolution\\W11_Client\\src\\W11_Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E78BDE8E-C5B6-46B0-8204-3B0C22543C07}|W11_Client\\W11_Client.vcxproj|solutionrelative:W11_Client\\src\\W11_Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C293962D-E5E1-42D0-83F7-CCEA0FC4D22E}|w11_Server\\w11_Server.vcxproj|D:\\SoftwareDevelopment\\CPP_Network_Programming\\NetworkProgrammingSolution\\w11_Server\\src\\w11_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C293962D-E5E1-42D0-83F7-CCEA0FC4D22E}|w11_Server\\w11_Server.vcxproj|solutionrelative:w11_Server\\src\\w11_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1D16842-49F3-4421-BBB4-FE1E813B601C}|checking\\checking.vcxproj|D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1D16842-49F3-4421-BBB4-FE1E813B601C}|checking\\checking.vcxproj|solutionrelative:checking\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1D16842-49F3-4421-BBB4-FE1E813B601C}|checking\\checking.vcxproj|D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\checking.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1D16842-49F3-4421-BBB4-FE1E813B601C}|checking\\checking.vcxproj|solutionrelative:checking\\checking.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,40 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "stdafx.cpp",
-              "DocumentMoniker": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\stdafx.cpp",
-              "RelativeDocumentMoniker": "checking\\stdafx.cpp",
-              "ToolTip": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\stdafx.cpp",
-              "RelativeToolTip": "checking\\stdafx.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
+              "Title": "w11_Server.cpp",
+              "DocumentMoniker": "D:\\SoftwareDevelopment\\CPP_Network_Programming\\NetworkProgrammingSolution\\w11_Server\\src\\w11_Server.cpp",
+              "RelativeDocumentMoniker": "w11_Server\\src\\w11_Server.cpp",
+              "ToolTip": "D:\\SoftwareDevelopment\\CPP_Network_Programming\\NetworkProgrammingSolution\\w11_Server\\src\\w11_Server.cpp",
+              "RelativeToolTip": "w11_Server\\src\\w11_Server.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-18T13:10:16.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "checking.cpp",
-              "DocumentMoniker": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\checking.cpp",
-              "RelativeDocumentMoniker": "checking\\checking.cpp",
-              "ToolTip": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\checking\\checking.cpp",
-              "RelativeToolTip": "checking\\checking.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-18T13:05:15.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-19T13:57:48.093Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "w11_Server.cpp",
-              "DocumentMoniker": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\w11_Server\\src\\w11_Server.cpp",
-              "RelativeDocumentMoniker": "w11_Server\\src\\w11_Server.cpp",
-              "ToolTip": "D:\\SoftwareDevelopment\\Network Programming\\NetworkProgrammingSolution\\w11_Server\\src\\w11_Server.cpp",
-              "RelativeToolTip": "w11_Server\\src\\w11_Server.cpp",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFMAAAAWAAAA",
+              "Title": "W11_Client.cpp",
+              "DocumentMoniker": "D:\\SoftwareDevelopment\\CPP_Network_Programming\\NetworkProgrammingSolution\\W11_Client\\src\\W11_Client.cpp",
+              "RelativeDocumentMoniker": "W11_Client\\src\\W11_Client.cpp",
+              "ToolTip": "D:\\SoftwareDevelopment\\CPP_Network_Programming\\NetworkProgrammingSolution\\W11_Client\\src\\W11_Client.cpp",
+              "RelativeToolTip": "W11_Client\\src\\W11_Client.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-18T06:27:02.661Z",
+              "WhenOpened": "2024-09-19T13:54:12.809Z",
               "EditorCaption": ""
             }
           ]

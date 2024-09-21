@@ -11,17 +11,16 @@ using namespace std;
 int main()
 {
     cout << "=== W11 sockets =====";
-    cout << "=== SERVER =====";
+    cout << "=== CLIENT =====";
     cout << "=== Step1 - Set up DLL =====";
 
-    SOCKET serverSocket, acceptSocket;
+    SOCKET clientSocket;
     int port = 55555;
     WSADATA wsaData;
     int wsaerr;
+
     WORD wVersionRequested = MAKEWORD(2, 2);
-
     wsaerr = WSAStartup(wVersionRequested, &wsaData);
-
     if (wsaerr != 0) {
         cout << "The Winsock dll not found!" << endl;
         return 0;
@@ -34,17 +33,51 @@ int main()
 
     }
 
+
+    cout << "\n\n=== Step2 - Set up Server Socket =====\n";
+
+    clientSocket = INVALID_SOCKET;
+    clientSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    if (clientSocket == INVALID_SOCKET) {
+        cout << "Error at socket():" << WSAGetLastError() << endl;
+        WSACleanup();
+        return 0;
+    }
+
+    else
+    {
+        cout << "Socket() is OK!" << endl;
+    }
+
+
+
+    cout << "\n\n=== Step3 - client connect =====\n";
+    sockaddr_in clientService;
+
+    clientService.sin_family = AF_INET;
+    clientService.sin_port = htons(port);
+    InetPton(AF_INET, "127.0.0.1", &clientService.sin_addr.s_addr);
+
+/*Attempt to connect the socket to the specified address and port.Cast of the
+  clientService structure to a sockaddr pointer by SOCKADDR data type.
+  The connect() function expects a sockaddr pointer, but clientService is of type 
+  sockaddr_in. */
+
+    int connectResult;
+    connectResult = connect(clientSocket, (SOCKADDR*) &clientService, sizeof(clientService));
+    if (connectResult == SOCKET_ERROR) {
+        cout << "Faaail to connect" << endl;
+        WSACleanup();
+        return 0;
+    }
+    else
+    {
+        cout << "connect ok. Client can start send and receive data." << endl;
+    }
+
+    system("pause");
+    WSACleanup();
+
     return 0;
 
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
