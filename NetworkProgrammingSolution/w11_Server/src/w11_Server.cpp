@@ -117,7 +117,7 @@ int main()
     }
 
 
-    cout << "\n\n=== Accept Connection from Client =====\n";
+    cout << "\n\n=== steps 5: Accept Connection from Client =====\n";
 
     acceptSocket = accept(serverSocket, NULL, NULL);
     if (acceptSocket == INVALID_SOCKET)
@@ -128,9 +128,35 @@ int main()
     }
 
     cout << "accepted connection" << endl;
-    system("pause"); //to see the output in console.
-    WSACleanup();
-    
 
-    return 0; // End the program
+
+
+    cout << "\n\n=== steps-6: chat to the Client =====\n";
+
+    char receiveBuffer[200];  // Create a character array to hold the input
+    int rcvByteCount = recv(acceptSocket, receiveBuffer, 200, 0);
+
+    if (rcvByteCount < 0)
+    {
+        cout << "Client: error: "<< WSAGetLastError() << endl;
+        return 0;  //here for terminating function.
+    }
+
+    else
+    {
+        cout << "Receive Data: " << receiveBuffer << endl;
+    }
+
+    WSACleanup();
+
+
+
+
+
+    cout << "\n\n=== Step-7: close socket =====\n";
+
+    system("pause");
+    WSACleanup();
+
+    return 0;
 }

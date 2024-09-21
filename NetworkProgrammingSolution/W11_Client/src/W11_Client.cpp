@@ -75,6 +75,33 @@ int main()
         cout << "connect ok. Client can start send and receive data." << endl;
     }
 
+    cout << "\n\n=== Step4 - chat to the server =====\n";
+
+
+    char buffer[200];  // Create a character array to hold the input
+    cout<<"Enter your message: \n";  // Prompt the user for input
+    cin.getline(buffer, 200);  // Read the input from the user and store it in buffer
+
+    int byteCount = send(clientSocket, buffer, 200, 0);
+
+    if (byteCount == SOCKET_ERROR)
+    {
+        cout << "server send error: " << WSAGetLastError() <<endl;
+        return -1;  //as regular syntext, return -1 for error
+    }
+
+    else
+    {
+        cout <<"Server: message sent: " << byteCount << endl;
+    }
+
+    WSACleanup();
+
+
+
+
+    cout << "\n\n=== Step5 - close socket =====\n";
+
     system("pause");
     WSACleanup();
 
